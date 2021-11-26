@@ -181,30 +181,40 @@
 // Напишите функцию initSnake(str), которая преобразует стиль написания составных слов строки из CamelCase 
 // в snake_case, при котором несколько слов разделяются символом подчеркивания (_), причём каждое слово пишется с маленькой буквы.
 
-let str = "HelloWorld";
-let str2 = [];
-function initSnake(str) {
-   str2=str.split(/ |\B(?=[A-Z])/);
-   return (str2.join('_').toLowerCase());
-};
-console.log(initSnake(str)); //hello_world
+// let str = "HelloWorld";
+// let str2 = [];
+// function initSnake(str) {
+//    str2=str.split(/ |\B(?=[A-Z])/);
+//    return (str2.join('_').toLowerCase());
+// };
+// console.log(initSnake(str)); //hello_world
 
 // 12. Повторить строку n раз
 // Напишите функцию repeatStr(str, n), которая вовращает строку повторяемую определённое количество раз.
-
+// let str = "HelloWorld";
 // function repeatStr(str, n) { 
-//     "Tproger ".repeat(3);
+//     return (str.repeat(n));
 // };
+// console.log(repeatStr(str, 5)); //HelloWorldHelloWorldHelloWorldHelloWorldHelloWorld
 
 
 // 13. Получить имя файла
-// Напишите функцию path(pathname), которая вовращает имя файла (подстрока после последнего символа "\" ) из полного пути к файлу.
+// Напишите функцию path(pathname), которая вовращает имя файла (подстрока после последнего символа "\" )
+// из полного пути к файлу.
 
-// var pathname = "/home/user/dir/file.txt";
-
+// let pathname = "/home/user/dir/file.txt";
+// let slovo = "";
 // function path(pathname) { 
-//     ...ваш код...
+//     return (pathname.lastIndexOf(slovo));
 // };
+// console.log(path(pathname)); //23
+
+let pathname = "/home/user/dir/file.txt";
+let slovo = "";
+function path(pathname) { 
+    return (pathname.lastIndexOf(slovo));
+};
+console.log(path(pathname)); //23
 
 // 14. Заканчивается ли строка символами другой строки
 // Создайте метод объекта String endsWith(), который сравнивает подстроку str1 с окончанием исходной строки str 
