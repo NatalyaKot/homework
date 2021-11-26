@@ -10,6 +10,7 @@
 
 // console.log(getSquaring(5)); //25
 
+// const getSquaring = (num) => num ** 2;
 
 // 2. Сделайте функцию, которая возвращает сумму двух чисел.
 
@@ -75,7 +76,7 @@
 
 
 // function comparison (a,b) {
-//     if (a==b) {
+//     if (a===b) {
 //         return true;
 //     } else
 //     return false;
@@ -85,6 +86,8 @@
 
 // console.log(comparison(5,7)); //false
 // console.log(comparison(5,5)); //true
+
+//const isEqual = (num1, num2) => num1 === num2;
 
 // 6.Сделайте функцию, которая параметрами принимает 2 числа. 
 //Если их сумма больше 10 - пусть вернет true, а если нет то - false.
@@ -100,6 +103,8 @@
 
 // console.log(calcComparisonSum(5,7)); //true
 // // console.log(comparisonSum(5,3)); //false
+
+//const getCalcCompar = (num1, num2) => num1 + num2 > 10;
 
 // 7. Сделайте функцию, которая параметром принимает число и проверяет
 //  - отрицательное оно или нет. 
@@ -152,6 +157,8 @@
 // console.log(isNumberInRange (30)); // false
 // console.log(isNumberInRange (-6)); //false
 
+//const isNumberInRange = (num) => num > 0 && num < 10;
+
 // 9. Создайте функцию rgb(), которая будет принимать три числовых аргумента 
 //и возвращать строку вида «rgb(23,100,134)». Если аргументы не заданы, 
 //считать их равными нулю. Не проверять переменные на тип данных
@@ -161,7 +168,15 @@
 // }
 // rgb ();
 
+// function rgb (a,b,c) {
+//         return `rgb (${a || 0},${b || 0},${c || 0})`;
+// }
+// rgb ();
+
 // console.log(rgb(3,506,75)); // rgb (3,506,75)
+// console.log(rgb(3,506)); // rgb (3,506,0)
+
+// const rgb = (r =0, g = 0, b = 0) => `rgb(${r}, ${g}, ${b})`
 // console.log(rgb(3,506)); // rgb (3,506,0)
 
 // 10.Написать функцию, которая принимает в себя три параметра - 
@@ -189,6 +204,19 @@
 // rgb();
 
 // console.log(rgb(3)); // 
+
+// const getSquareNum = (num) => num **2;
+// const getIncrement = (num) => num ++;
+
+// const conditionalCb = (num, cb1, cb2) => {
+//     if (num %2 ===0) {
+//         return cb1(num);
+//     } else {
+//         return cb2(num);
+//     }
+// }
+
+// console.log(conditionalCb(num, getSquareNum, getIncrement));
 
 
 // 11.Написать функцию mult(num1, num2 , num3) принимающую 3 числа. 
@@ -219,6 +247,18 @@
 //  mult();
 
 //  console.log(sum); // 2
+
+// const mult = (num1, num2, num3) => {
+//     for (let i = 0; i < num3; i++) 
+//      или for (; num3===0; num3--) 
+//     {
+//         num1 = num1*num3;
+//         или
+//         num1 *= num2;
+//     }
+//     return num1;
+// };
+// console.log(mult(2,2,2));
 
 //12.Написать функцию, которая принимает 3 аргумента(каждый аргумент - 1 слово) 
 //и возвращает строку с этими 3 словами, расположенными в алфавитном порядке.
@@ -364,5 +404,3 @@
 // }
 
 // console.log(func(a));
-
-gfbgf
