@@ -181,10 +181,13 @@
 // Напишите функцию initSnake(str), которая преобразует стиль написания составных слов строки из CamelCase 
 // в snake_case, при котором несколько слов разделяются символом подчеркивания (_), причём каждое слово пишется с маленькой буквы.
 
-
-// function initSnake(str) {
-//     ...ваш код...
-// };
+let str = "HelloWorld";
+let str2 = [];
+function initSnake(str) {
+   str2=str.split(/ |\B(?=[A-Z])/);
+   return (str2.join('_').toLowerCase());
+};
+console.log(initSnake(str)); //hello_world
 
 // 12. Повторить строку n раз
 // Напишите функцию repeatStr(str, n), которая вовращает строку повторяемую определённое количество раз.
