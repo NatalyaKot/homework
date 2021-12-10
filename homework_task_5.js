@@ -20,7 +20,7 @@
 
 // function insert_dash(str) {
 //      for (let i = 0; i < str.length; i++) {
-//   return str.replace(" ", "-").toUpperCase(); 
+//   return str.replaceAll(" ", "-").toUpperCase(); 
 //      }
 // };
 
@@ -203,22 +203,22 @@
 // из полного пути к файлу.
 
 // let pathname = "/home/user/dir/file.txt";
-// let slovo = "";
+// let slovo = "file.txt";
 // function path(pathname) { 
 //     return (pathname.lastIndexOf(slovo));
 // };
-// console.log(path(pathname)); //23
+// console.log(path(pathname)); //15
 
-let pathname = "/home/user/dir/file.txt";
-let slovo = "";
-function path(pathname) { 
-    return (pathname.lastIndexOf(slovo));
-};
-console.log(path(pathname)); //23
+// let pathname = "/home/user/dir/file.txt";
+// let slovo = "file.txt";
+// function path(pathname) { 
+    
+// };
+// console.log(path(pathname)); 
 
 // 14. Заканчивается ли строка символами другой строки
-// Создайте метод объекта String endsWith(), который сравнивает подстроку str1 с окончанием исходной строки str 
-// и определяет заканчивается ли строка символами подстроки.
+// Создайте метод объекта String endsWith(), который сравнивает подстроку str1 с окончанием исходной 
+//строки str  и определяет заканчивается ли строка символами подстроки.
 
 // var str = "Каждый охотник желает знать"; 
 // var str1 = "скрипт";
